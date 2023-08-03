@@ -12,3 +12,9 @@ Feature: Test OrangeHRM Application
     And User validate homepage logo
     And user validate homepage Title
     And then Click on PIM page
+
+  #PIM page created by Sulbha
+  Scenario: Test the PIM Page Functionality
+    When User Click on Add Employee button
+    And User enter firstname and middlename and lastname and capture user ID
+    Then User click on save button
