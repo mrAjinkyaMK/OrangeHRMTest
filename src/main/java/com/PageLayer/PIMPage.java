@@ -36,13 +36,12 @@ public class PIMPage extends BaseClass {
 		UtilsClass.click(Addemplink);
 	}
 
-	public void enterEmpInformation(String fname, String mname, String lname) {
+	public String enterEmpInformation(String fname, String mname, String lname) {
 		UtilsClass.sendKeys(firstName, fname);
 		UtilsClass.sendKeys(middleName, mname);
 		UtilsClass.sendKeys(lastName, lname);
-		 eid = empID.getAttribute("value");
-		 System.out.println(eid);
-
+		return empID.getText();
+		
 	}
 
 	public void clickOnSaveButton() {
