@@ -18,3 +18,9 @@ Feature: Test OrangeHRM Application
     When User Click on Add Employee button
     And User enter firstname and middlename and lastname and capture user ID
     Then User click on save button
+    
+    #UserPersonalDetails Page created by Manish
+    
+    Scenario: Test the UserPersonalDetails Page Functionality
+    When user enter License No and Gender
+    And click on Save Button
