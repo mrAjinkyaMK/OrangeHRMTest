@@ -26,5 +26,10 @@ public class UtilsClass extends BaseClass{
 		return driver.getCurrentUrl();
 	}
 	
+	public static boolean logo(WebElement wb)
+	{
+			return	wb.isDisplayed();
+	}
+	
 	
 }
